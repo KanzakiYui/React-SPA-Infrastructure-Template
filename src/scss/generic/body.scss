@@ -1,0 +1,16 @@
+@import 'variables/image';
+@import 'variables/color'; 
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: $homepage-background-image;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial, initial;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: $color-black-normal;
+}
