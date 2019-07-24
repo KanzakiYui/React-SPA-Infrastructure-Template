@@ -1,0 +1,46 @@
+{
+  "name": "api-documentation",
+  "version": "0.0.1",
+  "description": "this is the API documentation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --config=./compile/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KanzakiYui/API_Documentation.git"
+  },
+  "keywords": [
+    "API",
+    "Documentation"
+  ],
+  "author": "Kanzaki_Yui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KanzakiYui/API_Documentation/issues"
+  },
+  "homepage": "https://github.com/KanzakiYui/API_Documentation#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.1.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "file-loader": "^4.1.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.14",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
