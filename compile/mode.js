@@ -1,2 +1,2 @@
-module.exports = environment =>
-    environment ? 'production' : 'development'
+module.exports = isProduction =>
+    isProduction ? 'production' : 'development'

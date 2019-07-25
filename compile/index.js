@@ -1,3 +1,4 @@
+const configuration = require('./configuration')
 const mode = require('./mode')
 const entry = require('./entry')
 const output = require('./output')
@@ -8,14 +9,17 @@ const stats = require('./stats')
 const performance = require('./performance')
 const devServer = require('./devServer')
 
-module.exports = () => {
+module.exports = (param, options) => {
+    const config = configuration(options)
+    const isProduction = config.isProduction
+    const nolint = config.nolint
     return {
-        mode: mode(false),
+        mode: mode(isProduction),
         entry,
         output,
         resolve,
-        module: webpackModules,
-        devtool: devtool(false),
+        module: webpackModules(nolint),
+        devtool: devtool(isProduction),
         stats,
         performance,
         devServer
