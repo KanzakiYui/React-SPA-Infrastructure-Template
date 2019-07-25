@@ -5,5 +5,7 @@ module.exports = ({ port }) => ({
     hot: true,
     historyApiFallback: true,
     clientLogLevel: 'warn',
-    noInfo: true
+    noInfo: true,
+    host: '0.0.0.0',
+    public: `localhost:${port}`
 })

@@ -10,10 +10,11 @@ const performance = require('./performance')
 const devServer = require('./devServer')
 
 module.exports = (param, options) => {
-    const config = configuration(options)
-    const isProduction = config.isProduction
-    const nolint = config.nolint
-    const port = config.port
+    const {
+        isProduction,
+        nolint,
+        port
+    } = configuration(options)
     return {
         mode: mode(isProduction),
         entry,
