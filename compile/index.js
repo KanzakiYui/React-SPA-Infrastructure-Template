@@ -13,6 +13,7 @@ module.exports = (param, options) => {
     const config = configuration(options)
     const isProduction = config.isProduction
     const nolint = config.nolint
+    const port = config.port
     return {
         mode: mode(isProduction),
         entry,
@@ -22,6 +23,6 @@ module.exports = (param, options) => {
         devtool: devtool(isProduction),
         stats,
         performance,
-        devServer
+        devServer: devServer({port})
     }
 }
