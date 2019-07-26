@@ -1,2 +1,2 @@
 module.exports = isProduction =>
-    isProduction ? undefined : 'inline-source-map'
+    isProduction ? undefined : 'eval-source-map'
