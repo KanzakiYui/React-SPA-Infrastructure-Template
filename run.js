@@ -7,7 +7,8 @@ const args = process.argv.slice(2).map(entry => {
     return `--${entry.slice(0, index)}=${entry.slice(index+1)}`
 })
 
-const child = childProcess.spawn('npm.cmd', ['run', 'dev', '--', ...args])
+const command = process.platform === 'win32' ? 'npm.cmd' : 'npm'
+const child = childProcess.spawn(command, ['run', 'dev', '--', ...args])
 child.stdout.on('data', data => {
     console.log(data.toString())
 })
