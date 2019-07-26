@@ -29,21 +29,27 @@
         "react"
     ],
     "rules": {
-        "indent": [
-            "warn",     4
-        ],
-        "linebreak-style": [
-            "warn",     "windows"
-        ],
-        "no-console":   "warn",
-        "no-unused-vars": [
-            "warn",     {"vars": "all", "args": "after-used"}
-        ],
-        "quotes": [
-            "warn",     "single"
-        ],
-        "semi": [
-            "warn",     "never"
-        ]
+        "array-bracket-spacing":            ["warn", "always"],
+        "array-callback-return":            ["warn", { "allowImplicit": true }],
+        "block-spacing":                    "warn",             
+        "block-scoped-var":                 "warn",
+        "camelcase":                        "warn",
+        "default-case":                     "warn",
+        "indent":                           ["warn", 4],
+        "linebreak-style":                  ["warn", "windows"],
+        "no-console":                       "warn",
+        "no-extra-parens":                  "warn",
+        "no-floating-decimal":              "warn",
+        "no-lonely-if":                     "warn",
+        //TODO
+        "no-multi-spaces":                  "warn",
+        "no-new-wrappers":                  "warn",
+        "no-return-await":                  "warn",
+        "no-unused-vars":                   ["warn", {"vars": "all", "args": "after-used"}],
+        "quotes":                           ["warn", "single"],
+        "radix":                            "warn",
+        "semi":                             ["warn", "never"],
+        "yoda":                             "warn"
+
     }
 }
