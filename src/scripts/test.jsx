@@ -1,5 +1,5 @@
 import React from 'react'
-const X = props => {
+const Test = props => {
     return <div id='10'>Hello {props}</div>
 }
-export default X
+export default Test
