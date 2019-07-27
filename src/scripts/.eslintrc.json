@@ -37,6 +37,7 @@
         "block-scoped-var":                     "warn",
         "camelcase":                            "warn",
         "default-case":                         "warn",
+        "eol-last":                             ["warn", "always"],
         "indent":                               ["warn", 4],
         "linebreak-style":                      ["warn", "windows"],
         "no-console":                           "warn",
