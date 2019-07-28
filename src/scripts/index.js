@@ -1,6 +1,7 @@
 console.log('Environment:', process.env.NODE_ENV)
 
-const X =
+const x =
+    '1234567890' +
     '1234567890' +
     '1234567890' +
     '1234567890' +
@@ -8,4 +9,4 @@ const X =
     '1234567890' +
     '1234567890'
 
-const AddMore = props => !props
+const y = props => !props
