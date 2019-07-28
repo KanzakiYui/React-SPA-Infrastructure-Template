@@ -4,4 +4,4 @@ module.exports = isBuild => ({
   errorDetails: false,
   warnings: true,
   timings: isBuild
-});
+})

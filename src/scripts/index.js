@@ -9,4 +9,4 @@ const x =
     '1234567890' +
     '1234567890'
 
-const y = props => !props
+const y = props => props

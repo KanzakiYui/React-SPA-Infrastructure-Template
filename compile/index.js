@@ -1,16 +1,16 @@
-const configuration = require("./configuration");
-const mode = require("./mode");
-const entry = require("./entry");
-const output = require("./output");
-const resolve = require("./resolve");
-const webpackModules = require("./module");
-const devtool = require("./devtool");
-const stats = require("./stats");
-const performance = require("./performance");
-const devServer = require("./devServer");
+const configuration = require("./configuration")
+const mode = require("./mode")
+const entry = require("./entry")
+const output = require("./output")
+const resolve = require("./resolve")
+const webpackModules = require("./module")
+const devtool = require("./devtool")
+const stats = require("./stats")
+const performance = require("./performance")
+const devServer = require("./devServer")
 
 module.exports = (param, options) => {
-  const { isProduction, nolint, port, isBuild } = configuration(options);
+  const { isProduction, nolint, port, isBuild } = configuration(options)
   return {
     mode: mode(isProduction),
     entry,
@@ -21,5 +21,5 @@ module.exports = (param, options) => {
     stats: stats(isBuild),
     performance,
     devServer: devServer({ port })
-  };
-};
+  }
+}
