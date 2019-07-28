@@ -1,5 +1,7 @@
 # Overview
-Coming soon...
+1. This is an **useful, developer-friendly_ React SPA Infrastructure template**. It already set up lots of configuration and all of them are totally replaceable.
+2. You can use this repository as a fundamental structure to easily start your React SPA asap.
+3. It exposed all configurations without heavy dependencies (**as light as possible**)
 
 
 # All Available Commands
@@ -10,7 +12,7 @@ Coming soon...
 
 ### Available Options
 1. To run application with options, you can use `node run option1 option2 option3...` pattern.
-2. Some options accpet values and you can use **optionX=Y** to pass values to options.
+2. Some options accept values and you can use **optionX=Y** to pass values to options.
 3. Most of options are compatible with others.
 4. You are welcome to give suggestion to provide more useful & user-friendly commands.
 5. Example: `node run nolint port=8001`
@@ -31,8 +33,8 @@ Coming soon...
 2. [husky](https://github.com/typicode/husky)
 
 ## 3. _npm run lint_
-1. Although when you start the application, you can view all lint warings in browser console, however we also provide alternative to check your syntax & best practice problems in more straightforward way.
-2. Using this command will output all lint warnings in your termianl directly and application won't occupy resource/memory to start a local server to run this application.
+1. Although when you start the application, you can view all lint warnings in browser console, however we also provide alternative to check your syntax & best practice problems in more straightforward way.
+2. Using this command will output all lint warnings in your terminal directly and application won't occupy resource/memory to start a local server to run this application.
 
 ## 4. _npm run build_
 1. Create a bundile file containing all necessary resources (media resources like images etc. will be created separately)
