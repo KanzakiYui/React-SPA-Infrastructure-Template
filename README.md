@@ -34,7 +34,8 @@
 3. However, it's highly recommended to fix all linter warnings before you merge the PR.
 
 ### Pre-commit Hook
-The pre-commit hook will force to run both `npm run format` and `npm run lint` before your commit (e.g. `git add-commit`)
+The pre-commit hook will automatically use both eslint and prettier try to fix all code styles / best practice issues before your commit (e.g. `git add-commit`). If some fix failed then the commit will be prevented. Thanks to lint-staged, usually you just need to commit once and the underlying auto-process will handle all dirty stuffs for you.
+
 1. [pretty-quick](https://github.com/azz/pretty-quick)
 2. [eslint](https://github.com/eslint/eslint)
 3. [husky](https://github.com/typicode/husky)
