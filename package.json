@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config=./compile/index.js",
     "format": ".\\node_modules\\.bin\\prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": ".\\node_modules\\.bin\\eslint src/scripts/**/*.{js,jsx}",
+    "lint": ".\\node_modules\\.bin\\eslint src/scripts/**/*.{js,jsx} --fix",
     "build": "webpack --config=./compile/index.js --prod --nolint --build"
   },
   "repository": {
@@ -52,7 +52,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run lint --fix"
+      "pre-commit": "npm run format && npm run lint"
     }
   }
 }
