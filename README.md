@@ -1,7 +1,8 @@
 # Overview
 1. This is an **useful, developer-friendly React SPA Infrastructure template**. It already set up lots of configuration and all of them are totally replaceable.
 2. You can use this repository as a fundamental structure to easily start your React SPA asap.
-3. It exposed all configurations without heavy dependencies (**as light as possible**)
+3. It exposes all configurations without heavy dependencies (**as light as possible**)
+4. It includes few media resources (image, icon, etc.), you can replace them upon your demand.
 4. Windows environment is recommended.
 
 # All Available Commands
