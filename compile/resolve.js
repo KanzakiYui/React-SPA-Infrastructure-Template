@@ -1,5 +1,5 @@
-const path = require('path');
-module.exports = {
+const path=require('path');
+module.exports={
     modules: [
         path.resolve(__dirname, '../scr/scripts'),
         path.resolve(__dirname, '../scr/scss'),
