@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 module.exports = {
     modules: [
         path.resolve(__dirname, '../scr/scripts'),
@@ -7,4 +7,4 @@ module.exports = {
         path.resolve(__dirname, '../node_modules'),
     ],
     extensions: ['.wasm', '.mjs', '.js', '.json', '.jsx']
-}
+};
