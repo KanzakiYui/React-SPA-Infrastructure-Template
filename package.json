@@ -1,11 +1,24 @@
 {
   "name": "api-documentation",
+  "author": "Kanzaki_Yui",
   "version": "0.0.1",
   "description": "this is the API documentation",
-  "main": "index.js",
+  "keyword": [
+    "API",
+    "Documentation"
+  ],
+  "license": "MIT",
+  "os": [
+    "win32"
+  ],
+  "homepage": "https://github.com/KanzakiYui/API_Documentation#readme",
+  "bugs": {
+    "url": "https://github.com/KanzakiYui/API_Documentation/issues"
+  },
   "scripts": {
     "dev": "webpack-dev-server --open --config=./compile/index.js",
-    "format": ".\\node_modules\\.bin\\prettier --write \"src/**/*.{js,jsx}\""
+    "format": ".\\node_modules\\.bin\\prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": ".\\node_modules\\.bin\\eslint src/scripts/**/*.{js,jsx}"
   },
   "repository": {
     "type": "git",
@@ -15,12 +28,6 @@
     "API",
     "Documentation"
   ],
-  "author": "Kanzaki_Yui",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/KanzakiYui/API_Documentation/issues"
-  },
-  "homepage": "https://github.com/KanzakiYui/API_Documentation#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -42,7 +49,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
