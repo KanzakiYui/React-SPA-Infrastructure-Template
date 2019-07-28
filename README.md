@@ -28,13 +28,16 @@
 2. It actually takes advantage of [Prettier](https://github.com/prettier/prettier)
 3. Beside this manual command, you can just push you commit since there is a pre-commit hook attached which will format your code automatically
 
-### Pre-commit Hook
-1. [pretty-quick](https://github.com/azz/pretty-quick)
-2. [husky](https://github.com/typicode/husky)
-
 ## 3. _npm run lint_
 1. Although when you start the application, you can view all lint warnings in browser console, however we also provide alternative to check your syntax & best practice problems in more straightforward way.
-2. Using this command will output all lint warnings in your terminal directly and application won't occupy resource/memory to start a local server to run this application.
+2. By Using this command, it will _**try to fix**_ all possible lint issues and then output all remaining lint warnings in your terminal directly. The application won't start a local server to run this application so that resource/memory will be saved.
+3. However, it's highly recommended to fix all linter warnings before you merge the PR.
+
+### Pre-commit Hook
+The pre-commit hook will force to run both `npm run format` and `npm run lint` before your commit (e.g. `git add-commit`)
+1. [pretty-quick](https://github.com/azz/pretty-quick)
+2. [husky](https://github.com/typicode/husky)
+3. [eslint](https://github.com/eslint/eslint)
 
 ## 4. _npm run build_
 1. Create a bundile file containing all necessary resources (media resources like images etc. will be created separately)
