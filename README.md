@@ -36,11 +36,14 @@
 ### Pre-commit Hook
 The pre-commit hook will force to run both `npm run format` and `npm run lint` before your commit (e.g. `git add-commit`)
 1. [pretty-quick](https://github.com/azz/pretty-quick)
-2. [husky](https://github.com/typicode/husky)
-3. [eslint](https://github.com/eslint/eslint)
+2. [eslint](https://github.com/eslint/eslint)
+3. [husky](https://github.com/typicode/husky)
+4. [lint-staged](https://github.com/okonet/lint-staged)
+
+Please feel free to configure it to suit your preference.
 
 ## 4. _npm run build_
-1. Create a bundile file containing all necessary resources (media resources like images etc. will be created separately)
+1. Create a bundle file containing all necessary resources (media resources like images etc. will be created separately)
 2. All created files are under `assets` folder. Actually, you can directly open `index.html` in your browser once you bundled files, no need local server to serve requests.
 
 # Best Practice
