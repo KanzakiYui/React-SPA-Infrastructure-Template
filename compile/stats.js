@@ -1,6 +1,7 @@
-module.exports = {
-    all: false,
-    errors: true,
-    errorDetails: false,
-    warnings: true
-}
+module.exports = isBuild => ({
+  all: false,
+  errors: true,
+  errorDetails: false,
+  warnings: true,
+  timings: isBuild
+});
