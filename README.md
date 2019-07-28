@@ -3,7 +3,7 @@ Coming soon...
 
 
 # All Available Commands
-## 1. _`node run`_
+## 1. _node run_
 1. This command is used to start/test server & application under various environment/conditions.
 2. After you run the command, it will show default configuration (_**You can use it as reference to see what options are available**_) in terminal soon and automatically open new tab in browser (by default it will open `localhost:[port]`).
 3. The application is available on both `localhost` and your LAN (e.g. `192.168.1.100:[port]`).
@@ -20,7 +20,7 @@ Coming soon...
 | **prod**  | N/A | switch to **production** environment | development environment  |
 | **port**  | **Integer** | run application in given port number | port=3000  |
 
-## 2. _`node format`_
+## 2. _node format_
 1. This command is used to automatically format all existing `*.{js|jsx}` files under `src` folder.
 2. It actually takes advantage of [Prettier](https://github.com/prettier/prettier)
 3. Beside this manual command, you can just push you commit since there is a pre-commit hook attached which will format your code automatically
