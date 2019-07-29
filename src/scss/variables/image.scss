@@ -1,1 +1,3 @@
-$homepage-background-image: url('../media/images/homepage-background-image.jpg');
+$media-root-directory: '../media/';
+$media-image-root-directory: $media-root-directory+'images/';
+$homepage-background-image: url($media-image-root-directory+'web-main-background.jpg');
