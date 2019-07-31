@@ -3,7 +3,7 @@
 2. You can use this repository as a fundamental structure to easily start your React SPA asap.
 3. It exposes all configurations without heavy dependencies (**as light as possible**)
 4. It includes few media resources (image, icon, etc.), you can replace them upon your demand.
-4. Windows environment is recommended.
+4. **Windows environment is recommended**.
 
 # All Available Commands
 ## 1. _node run_
