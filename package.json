@@ -13,9 +13,9 @@
         "url": "https://github.com/KanzakiYui/API_Documentation/issues"
     },
     "scripts": {
-        "dev": "webpack-dev-server --open --config=./compile/index.js",
+        "server": "webpack-dev-server --open --config=./compile/index.js",
         "format": ".\\node_modules\\.bin\\prettier --write \"src/**/*.{js,jsx}\"",
-        "lint": ".\\node_modules\\.bin\\eslint src/scripts/**/*.{js,jsx} --fix",
+        "lint": ".\\node_modules\\.bin\\eslint src/scripts/**/*.{js,jsx}",
         "build": "webpack --config=./compile/index.js --prod --nolint --build"
     },
     "repository": {
