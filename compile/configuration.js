@@ -8,7 +8,8 @@ module.exports = ({ nolint, prod, port, build }) => {
   if (build) {
     console.log("\x1b[92m", "Start to bundle all files...")
     console.log("\x1b[37m\n")
-  } else {
+  } 
+  else {
     console.group("\x1b[92m", "Configuration")
     Object.entries(configuration).forEach(([key, value]) => {
       if (key !== "isBuild")
