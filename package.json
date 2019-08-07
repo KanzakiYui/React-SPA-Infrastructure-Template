@@ -1,16 +1,21 @@
 {
-    "name": "api-documentation",
+    "name": "react-spa-infrastructure-template",
     "author": "Kanzaki_Yui",
     "version": "0.0.1",
-    "description": "this is the API documentation",
+    "description": "this is an useful template to boost your react spa with various flexible settings",
     "keyword": [
-        "API",
-        "Documentation"
+        "react",
+        "template",
+        "infrastructure",
+        "spa",
+        "webpack",
+        "prettier",
+        "eslint"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/KanzakiYui/API_Documentation#readme",
+    "homepage": "https://github.com/KanzakiYui/React-SPA-Infrastructure-Template#readme",
     "bugs": {
-        "url": "https://github.com/KanzakiYui/API_Documentation/issues"
+        "url": "https://github.com/KanzakiYui/React-SPA-Infrastructure-Template/issues"
     },
     "scripts": {
         "server": "webpack-dev-server --open --config=./compile/index.js",
@@ -20,12 +25,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/KanzakiYui/API_Documentation.git"
+        "url": "git+https://github.com/KanzakiYui/React-SPA-Infrastructure-Template.git"
     },
-    "keywords": [
-        "API",
-        "Documentation"
-    ],
     "devDependencies": {
         "@babel/core": "^7.5.5",
         "@babel/preset-env": "^7.5.5",
