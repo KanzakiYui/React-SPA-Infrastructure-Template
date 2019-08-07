@@ -47,7 +47,6 @@
         "no-lonely-if":                         "warn",
         "no-multi-assign":                      "warn",
         "no-multiple-empty-lines":              "warn",
-        "no-multi-spaces":                      "warn",
         "no-new-object":                        "warn",
         "no-new-wrappers":                      "warn",
         "no-return-await":                      "warn",
