@@ -33,7 +33,7 @@
         "array-bracket-spacing":                ["warn", "always"],
         "array-callback-return":                ["warn", { "allowImplicit": true }],
         "arrow-spacing":                        "warn",
-        "block-spacing":                        "warn",             
+        "block-spacing":                        "warn",
         "block-scoped-var":                     "warn",
         "camelcase":                            "warn",
         "default-case":                         "warn",
