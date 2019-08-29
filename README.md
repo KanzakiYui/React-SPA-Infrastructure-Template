@@ -73,3 +73,7 @@ Please feel free to configure it to suit your preference.
 1. In the `src/scripts/.eslintrc.json` file, we included not only all rules covered by _**eslint:recommended**_ and _**plugin:react/recommended**_, but also lots of extra rules.
 2. Please refer them before you make any PR and any contributions. **Before merging your PR, you must clear all the linter warnings & errors!**.
 3. You are welcome to share your opinion about enhancing code styles and best practices.
+
+## GitHub Workflows
+1. In the `.github/workflows` directory, there is an included template file named `main.yml` which introduced basic checks each time when a `push` action is taken.
+2. GitHub will automatically runs 3 checks introduced (install, prettier, eslint), and you are **strongly recommended** to make sure all checks passed before you start to merge.
