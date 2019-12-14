@@ -14,7 +14,7 @@ const fileLoader = {
     ]
 }
 
-const scriptLoader = nolint => {
+const javascriptLoader = nolint => {
     const use = [
         {
             loader: "babel-loader",
@@ -35,10 +35,22 @@ const scriptLoader = nolint => {
     }
 }
 
+const typescriptLoader = {
+    test: /\.(ts|tsx)$/,
+    exclude: /node_modules/,
+    use: [
+        { loader: "ts-loader" }
+    ]
+}
+
 module.exports = nolint => ({
     rules: [
         styleLoader,
         fileLoader,
-        scriptLoader(nolint)
+        javascriptLoader(nolint),
+        typescriptLoader
     ]
 })
+
+// This may not complete, refer to:
+// https://www.typescriptlang.org/docs/handbook/react-&-webpack.html#create-a-webpack-configuration-file

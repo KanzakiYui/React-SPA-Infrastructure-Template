@@ -6,5 +6,5 @@ module.exports = {
         path.resolve(__dirname, '../src/media'),
         path.resolve(__dirname, '../node_modules'),
     ],
-    extensions: ['.wasm', '.mjs', '.js', '.json', '.jsx']
+    extensions: ['.wasm', '.mjs', '.js', '.json', '.jsx', '.ts', '.tsx']
 }
