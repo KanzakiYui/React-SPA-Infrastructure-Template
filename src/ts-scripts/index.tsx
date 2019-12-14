@@ -1,13 +1,13 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { render } from "react-dom";
 
-export interface HelloProps { compiler: string; framework: string; }
+export interface HelloProps { compiler: string }
 
 export const Hello = (props: HelloProps) => (
-    <h1>Hello from {props.compiler} and {props.framework}!</h1>
+    <h1>Compiler: {props.compiler}</h1>
 );
 
-ReactDOM.render(
-    <Hello compiler="TypeScript" framework="React" />,
-    document.getElementById("react-root")
+render(
+    <Hello compiler="TypeScript" />,
+    document.getElementById("react-ts-root")
 );

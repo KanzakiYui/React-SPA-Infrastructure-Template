@@ -35,6 +35,10 @@ const javascriptLoader = nolint => {
     }
 }
 
+// This may not complete, refer to:
+// https://www.typescriptlang.org/docs/handbook/react-&-webpack.html#create-a-webpack-configuration-file
+// Question: How to deal with typescript lint?
+
 const typescriptLoader = {
     test: /\.(ts|tsx)$/,
     exclude: /node_modules/,
@@ -52,5 +56,3 @@ module.exports = nolint => ({
     ]
 })
 
-// This may not complete, refer to:
-// https://www.typescriptlang.org/docs/handbook/react-&-webpack.html#create-a-webpack-configuration-file
