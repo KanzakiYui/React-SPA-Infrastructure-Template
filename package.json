@@ -19,6 +19,7 @@
     },
     "scripts": {
         "server": "webpack-dev-server --open --config=./compile/index.js",
+        "check-format": ".\\node_modules\\.bin\\prettier --check \"src/**/*.{js,jsx}\"",
         "format": ".\\node_modules\\.bin\\prettier --write \"src/**/*.{js,jsx}\"",
         "lint": ".\\node_modules\\.bin\\eslint src/scripts/**/*.{js,jsx}",
         "build": "webpack --config=./compile/index.js --prod --nolint --build"

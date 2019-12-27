@@ -22,4 +22,4 @@ jobs:
         node-version: '10.15'
     - run: yarn install
     - name: Prettier
-      run: ./node_modules/.bin/prettier --check src/**/*.{js,jsx}
+      run: node do check-format
