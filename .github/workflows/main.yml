@@ -8,6 +8,8 @@ jobs:
     runs-on: windows-latest     
     steps:
     - uses: actions/checkout@master
+      with:
+        ref: ${{ github.ref }}
     - name: Install Dependencies
       run: yarn
     - name: Run Prettier to Check Code Format
