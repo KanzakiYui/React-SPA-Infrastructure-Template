@@ -1,0 +1,25 @@
+on: push
+name: Best Practice
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.15'
+    - run: yarn install
+    - name: Lint
+      run: node do lint
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.15'
+    - run: yarn install
+    - name: Prettier
+      run: ./node_modules/.bin/prettier --check src/**/*.{js,jsx}
