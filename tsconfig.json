@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./assets/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es6",
+        "jsx": "react"
+    },
+    "include": [
+        "src/scripts/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
