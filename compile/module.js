@@ -14,7 +14,7 @@ const fileLoader = {
     ]
 }
 
-const scriptLoader = nolint => {
+const javascriptLoader = nolint => {
     const use = [
         {
             loader: "babel-loader",
@@ -35,10 +35,26 @@ const scriptLoader = nolint => {
     }
 }
 
+const typescriptloader = nolint => {
+    const use = [
+        {
+            loader: "ts-loader"
+        }
+    ]
+    if(!nolint)
+        use.push("eslint-loader")
+    return {
+        test: /\.ts(x?)$/,
+        exclude: /node_modules/,
+        use
+    }
+}
+
 module.exports = nolint => ({
     rules: [
         styleLoader,
         fileLoader,
-        scriptLoader(nolint)
+        javascriptLoader(nolint),
+        typescriptloader(nolint)
     ]
 })
